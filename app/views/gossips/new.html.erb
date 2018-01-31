@@ -1,0 +1,13 @@
+<h1>Créer un gossip</h1>
+
+<%= form_tag (gossips_path) do %>
+
+  <%= label_tag "anonymous_author", "Auteur" %>
+	<%= text_field_tag "anonymous_author" %>
+</br>
+	<%= label_tag "content", "Ton gossip" %>
+	<%= text_field_tag "content" %>
+</br>
+	<%= submit_tag "Créer mon gossip" %>
+<% end %>
+

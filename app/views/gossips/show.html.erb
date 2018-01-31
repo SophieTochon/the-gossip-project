@@ -1,0 +1,8 @@
+<h1> Ceci est un gossip </h1>
+<p> <%= @gossip.content %> </p>
+<p> from <%= @gossip.anonymous_author %> </p>
+
+<%= link_to "Index", gossips_index_path %>
+<%= link_to "Edit", edit_gossip_path %>
+
+<%= link_to 'Clique pour détruire', @gossip, method: :delete %>
